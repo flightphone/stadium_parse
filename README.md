@@ -4,9 +4,7 @@
 
 Можно запускать скрипт в следующей последовательни:
 
-get_stadium_list.py
-save_svg.py
-create_html.py
+get_stadium_list.py, save_svg.py, create_html.py
 
-Конечным результатом является файл arena.html и папки с названиями арен. В папку хранятся фйалы style.css и svg.html
+Конечным результатом является файл arena.html и папки с названиями арен. В папках хранятся фйалы style.css и svg.html
 
