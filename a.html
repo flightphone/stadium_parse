@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--style.css-->
+    <title>Стадионы</title>
+    <style>
+        [data-section] {
+            cursor: pointer;
+        }
+
+        [data-section]:hover:not([class="busy"]) {
+            fill: #28a594;
+        }
+
+        .busy {
+            fill: red;
+        }
+        
+        .allmaps    
+        {
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+<div style="position: fixed; top:0; z-index: 999; margin: 15px;"><h3>Вы выбрали сектор: <span id="selected"></span></h3></div>
+    <div class="stadium-map allmaps" id="allmap">
+        <!--svg-->
+    </div>
+    <script>
+        let click_svg = (e) => {
+            if (e.target.hasAttribute('data-block')) {
+                e.target.classList.toggle('busy')
+                document.getElementById('selected').innerHTML = e.target.parentElement.id + ", " + e.target.getAttribute('data-block')
+            }
+        }
+        window.onload = (ev) => {
+            document.getElementById('allmap').addEventListener('click', click_svg);
+
+        }
+    </script>
+</body>
+
+</html>

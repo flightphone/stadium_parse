@@ -1,0 +1,2 @@
+San_Siro;Piazzale Angelo Moratti, Milano, 20151, Italy;https://www.footballticketpad.com/serie-a/ac-milan-v-us-cremonese
+Alberto_Picco;Via Nicolò Fieschi, La Spezia, 19123 , Italy;https://www.footballticketpad.com/serie-a/spezia-v-ac-milan
